@@ -1,5 +1,5 @@
 import { Date_now } from "./model.js";
-import { articles } from "./template.js";
+import { User_data } from "./template.js";
 
 document.addEventListener("DOMContentLoaded", e => {
     console.log(e.target);
@@ -7,5 +7,5 @@ document.addEventListener("DOMContentLoaded", e => {
     Date_now.el.innerText = Date_now.dates;
     Date_now.el.setAttribute("datetime", Date_now.dates);
 
-    console.table(articles);
+    User_data.data();
 });
